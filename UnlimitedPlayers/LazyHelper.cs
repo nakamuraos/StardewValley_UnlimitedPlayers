@@ -10,6 +10,7 @@ namespace UnlimitedPlayers
   {
     public static int PlayerLimit { get; set; } = 10;
     public static List<string> ClientModsDenylist { get; set; } = new List<string>();
+    public static List<string> ClientModsAllowlist { get; set; } = new List<string>();
     public static IModHelper ModHelper { get; set; }
     public static ModEntry ModEntry { get; set; }
 
@@ -92,6 +93,7 @@ namespace UnlimitedPlayers
     public List<string> Denylist { get; set; } = new List<string>() {
       "CJBok.CheatsMenu", "Ryaon.JunimoKartCheater"
     };
+    public List<string> Allowlist { get; set; } = new List<string>();
   }
 
   public class ConfigParser
@@ -104,6 +106,7 @@ namespace UnlimitedPlayers
     {
       LazyHelper.PlayerLimit = PlayerLimit;
       LazyHelper.ClientModsDenylist = ClientMods.Denylist;
+      LazyHelper.ClientModsAllowlist = ClientMods.Allowlist;
     }
   }
 }

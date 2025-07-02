@@ -3,6 +3,7 @@
   "ClientMods": {
     "Denylist": [
       "CJBok.CheatsMenu", "Ryaon.JunimoKartCheater"
-    ]
+    ],
+    "Allowlist": []
   }
 }
